@@ -2,6 +2,8 @@
 
 A Chrome extension that adds a native "Export" button to Google's [NotebookLM](https://notebooklm.google.com/), allowing you to save reports as **Markdown** files or print them as clean, formatted **PDFs**.
 
+![Export Button Screenshot](screenshot.png)
+
 ## Features
 
 - **Markdown Export**: Save your reports as `.md` files with proper formatting (headers, tables, lists).
