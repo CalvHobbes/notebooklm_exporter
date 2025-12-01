@@ -34,9 +34,10 @@ Since this extension is not in the Chrome Web Store, you can install it manually
 3.  Select **Markdown (.md)** to save the file to your computer.
 4.  Select **PDF (via Print)** to open the print dialog with a clean layout.
 
-## Privacy
+## Privacy & Permissions
 
-This extension runs entirely locally in your browser. It does not collect any data or send any information to external servers.
+- **Clipboard Access**: This extension requires permission to read your clipboard (`clipboardRead`). This is **only** used to capture the report content when you click "Export". The extension programmatically clicks NotebookLM's "Copy" button and then reads that specific content to generate your file. It does not monitor your clipboard otherwise.
+- **Local Processing**: All processing happens entirely locally in your browser. No data is sent to any external servers.
 
 ## License
 
