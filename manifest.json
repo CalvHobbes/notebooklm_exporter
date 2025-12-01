@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "NotebookLM Report Exporter",
+    "version": "1.0",
+    "description": "Adds an export button to NotebookLM to export reports to file.",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "clipboardRead"
+    ],
+    "host_permissions": [
+        "https://notebooklm.google.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://notebooklm.google.com/*"
+            ],
+            "js": [
+                "marked.min.js",
+                "content.js"
+            ],
+            "css": [
+                "styles.css"
+            ]
+        }
+    ]
+}

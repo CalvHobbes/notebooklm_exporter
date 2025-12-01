@@ -1,0 +1,157 @@
+/* Export Button */
+.notebooklm-export-btn {
+    background-color: transparent;
+    color: #e3e3e3;
+    /* Light grey text */
+    border: 1px solid #5f6368;
+    /* Dark grey border */
+    border-radius: 100px;
+    /* Pill shape */
+    padding: 6px 16px;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    transition: background-color 0.2s, border-color 0.2s;
+    z-index: 9999;
+    height: 32px;
+    /* Match standard toolbar height */
+    box-sizing: border-box;
+}
+
+.notebooklm-export-btn:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    /* Subtle hover */
+    border-color: #e3e3e3;
+}
+
+/* Dropdown Menu */
+.notebooklm-export-menu {
+    position: absolute;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    /* Hidden by default */
+    flex-direction: column;
+    z-index: 10000;
+    min-width: 150px;
+    padding: 8px 0;
+    margin-top: 4px;
+}
+
+.notebooklm-export-menu.show {
+    display: flex;
+}
+
+/* Dropdown Menu Item */
+.notebooklm-export-menu-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #3c4043;
+    font-family: 'Google Sans', Roboto, Arial, sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.notebooklm-export-menu-item:hover {
+    background-color: #f1f3f4;
+}
+
+/* Print Styles for PDF Export */
+#notebooklm-print-container {
+    display: none;
+}
+
+@media print {
+    body>* {
+        display: none !important;
+        /* Hide all direct children of body */
+    }
+
+    /* Except our print container */
+    #notebooklm-print-container {
+        display: block !important;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        margin: 0;
+        padding: 20px 80px 20px 20px;
+        box-sizing: border-box;
+        background: white;
+        z-index: 99999;
+    }
+
+    /* Ensure content inside print container is visible */
+    #notebooklm-print-container * {
+        visibility: visible;
+    }
+
+    /* General Typography for Print */
+    #notebooklm-print-container {
+        font-family: 'Google Sans', Roboto, Arial, sans-serif;
+        font-size: 16px;
+        /* Increased body font size */
+        line-height: 1.6;
+        color: #000;
+    }
+
+    #notebooklm-print-container h1 {
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 700;
+    }
+
+    #notebooklm-print-container h2 {
+        font-size: 20px;
+        margin-top: 28px;
+        margin-bottom: 14px;
+        font-weight: 600;
+    }
+
+    #notebooklm-print-container h3 {
+        font-size: 18px;
+        margin-top: 24px;
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    #notebooklm-print-container p {
+        margin-bottom: 14px;
+    }
+
+    #notebooklm-print-container ul,
+    #notebooklm-print-container ol {
+        margin-bottom: 14px;
+        padding-left: 28px;
+    }
+
+    #notebooklm-print-container li {
+        margin-bottom: 6px;
+    }
+
+    /* Basic Table Styling for Print */
+    #notebooklm-print-container table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+        /* Slightly smaller than body but readable */
+    }
+
+    #notebooklm-print-container th,
+    #notebooklm-print-container td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    #notebooklm-print-container th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+}
