@@ -1,12 +1,12 @@
-# NotebookLM Markdown Exporter
+# NotebookLM Exporter - Export to PDF & Markdown
 
-A Chrome extension that adds a native "Export" button to Google's [NotebookLM](https://notebooklm.google.com/), allowing you to save reports as **Markdown** files or print them as clean, formatted **PDFs**.
+A Chrome extension that adds a native **"Export"** button to Google's [NotebookLM](https://notebooklm.google.com/). Easily **export NotebookLM reports to PDF** or **convert notes to Markdown** for offline backup and sharing.
 
-![Export Button Screenshot](screenshot.png)
+![NotebookLM Export to PDF and Markdown Button](screenshot.png)
 
 ## Features
 
-- **Markdown Export**: Save your reports as `.md` files with proper formatting (headers, tables, lists).
+- **Markdown Export**: Save your NotebookLMreports as `.md` files with proper formatting (headers, tables, lists).
 - **PDF Export**: Generate clean, print-ready PDFs with optimized typography and grid tables.
 - **Native UI**: The button blends seamlessly into the NotebookLM interface.
 - **Dark Mode Support**: Automatically adapts to your current theme.
